@@ -9,6 +9,7 @@ remote vpn587089111.v4.softether.net 1194 udp
 remote vpn587089111.v4.softether.net 1194 udp
 remote vpn587089111.v4.softether.net 1194 udp
 remote vpn587089111.v4.softether.net 1194 udp
+setenv CLIENT_CERT 0     
 dev tun
 proto udp
 cipher AES-128-CBC
