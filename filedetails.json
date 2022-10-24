@@ -14,16 +14,7 @@ remote vpn587089111.v4.softether.net 1194 udp
 remote vpn587089111.v4.softether.net 1194 udp
 remote vpn587089111.v4.softether.net 1194 udp
 dev tun
-dev-type tun
-proto udp
-cipher AES-128-CBC
-auth SHA1
-resolv-retry infinite
-nobind
-persist-key
-persist-tun
-client
-verb 3     
+dev-type tun    
 ns-cert-type server
 cipher AES-128-CBC
 auth SHA1
