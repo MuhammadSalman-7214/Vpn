@@ -16,6 +16,14 @@ remote 88.208.240.175 1194 udp
 dev tun
 dev-type tun
 ns-cert-type server
+cipher AES-128-CBC
+auth SHA1
+resolv-retry infinite
+nobind
+persist-key
+persist-tun
+client
+verb 3
 setenv opt tls-version-min 1.0 or-highest
 reneg-sec 604800
 sndbuf 0
