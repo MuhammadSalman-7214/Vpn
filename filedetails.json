@@ -14,7 +14,6 @@ dev-type tun
 proto tcp
 cipher AES-128-CBC
 auth SHA1
-auth-user-pass
 resolv-retry infinite
 nobind
 persist-key
