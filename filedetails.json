@@ -5,21 +5,16 @@ setenv FORWARD_COMPATIBLE 1
 client
 server-poll-timeout 4
 nobind
+remote 88.208.240.175 1194 udp
+remote 88.208.240.175 1194 udp
 remote 88.208.240.175 443 tcp
-remote 88.208.240.175 992 tcp
-remote 88.208.240.175 1194 tcp
-remote 88.208.240.175 5555 tcp
+remote 88.208.240.175 1194 udp
+remote 88.208.240.175 1194 udp
+remote 88.208.240.175 1194 udp
+remote 88.208.240.175 1194 udp
+remote 88.208.240.175 1194 udp
 dev tun
 dev-type tun
-proto tcp
-cipher AES-128-CBC
-auth SHA1
-resolv-retry infinite
-nobind
-persist-key
-persist-tun
-client
-verb 3
 ns-cert-type server
 setenv opt tls-version-min 1.0 or-highest
 reneg-sec 604800
@@ -58,8 +53,8 @@ lCvJITjQpSYWJnMC6R4=
 -----END CERTIFICATE-----
 </ca>
 
-;<cert>
-;-----BEGIN CERTIFICATE-----
+<cert>
+-----BEGIN CERTIFICATE-----
 MIICyTCCAbGgAwIBAgIBAzANBgkqhkiG9w0BAQsFADAVMRMwEQYDVQQDDApPcGVu
 VlBOIENBMB4XDTIwMDcyNTA4MjcyNloXDTMwMDczMDA4MjcyNlowGTEXMBUGA1UE
 AwwOdGVjaF9BVVRPTE9HSU4wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIB
@@ -75,11 +70,11 @@ NfHr3BFVNj6428emcqmcbnWZyO+lyx2ZTs0HgwDrarVSMINCXIFxf0Swh2AC9NsB
 Pi+rD+62ks9Ku3lFbglw5PBC9XkYIxOzYi/ojSrcZzu0tDPSHk8YdpDxiZe3+QQd
 W/FOtoMwOaJBS4suggzmy/rRR4bT+/vjLDtiqNZDIHkqjKMj+MvHc9m0CaiJiziZ
 pQFytwCjyDtf3BbNEhko6Kb6DojQZ1RZSPuVuVbmPmU8BLSa2ZIxPXezWJw1
-;-----END CERTIFICATE-----
-;</cert>
+-----END CERTIFICATE-----
+</cert>
 
-;<key>
-;-----BEGIN RSA PRIVATE KEY-----
+<key>
+-----BEGIN PRIVATE KEY-----
 MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCvjP3wSfHyvev6
 VaVnqGgEwOqgN7yn0jTW6Jpazrz2vahsPqR4YoBVmf7FxKru+MAMBbFrwJHSj/nK
 4SMDBdaNY8IX5tATqZJfr+7cosMGeXX0UvMSVUUORBYGVWMRb7M76iofar4mdY6z
@@ -106,8 +101,8 @@ toorzmHXGuKKf85mE83wkIhBxjMBZ2qRbmNA9OkCgYEAnBX+m8rWnkMD2c2mJAS8
 NNrjZ/5Ybv+Mrch95s2n5p9Uf3+zKb05zaoiiLLUZP+PmHyA8cfaBJ/ZKeTRDEl0
 ZnQyKUFRXc3GBH0YDnNxx/hmJYdvLCFb6ESb0TFMoWFeOi1qwL4TykO5N6Q+oWsg
 1DIggZHlIWj/iAp5KF8NNR4=
-;-----END RSA PRIVATE KEY-----
-;</key>
+-----END PRIVATE KEY-----
+</key>
 
 key-direction 1
 <tls-auth>
@@ -132,7 +127,7 @@ f7b58f085b6697470400d515243127d1
 e31a89203dd2a619f2e1e7b43bae3ec9
 dc7a0082c9ebe20e42941ffcabc1d6a3
 -----END OpenVPN Static key V1-----
-</tls-auth>"}
+</tls-auth>"},
      
     ]
 }
